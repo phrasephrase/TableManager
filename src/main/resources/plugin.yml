@@ -1,0 +1,8 @@
+name: TableManager
+version: '1.0'
+main: phrase.tableManager.Plugin
+api-version: '1.18'
+
+commands:
+  sb: {}
+  reload: {}

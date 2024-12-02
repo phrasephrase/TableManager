@@ -1,0 +1,30 @@
+prefix: "&b&l[>>]"
+isAPlayer: "&cВы не являетесь игроком!"
+reload: "&aПлагин успешно перезагружен!"
+usage: "&6Использование: &e/tablemanager reload"
+
+message:
+  enable: "&aВы включили скорборд"
+  disable: "&cВы выключили скорборд"
+
+settings:
+  scoreboard:
+    title: "&fScoreboard"
+    lines:
+    -
+    - '&aПривет!'
+    - '&6Скорборд создан при помощи &eTableManager'
+    -
+    - '&8Отключить скорборд &7/sb'
+    -
+    cooldownUpdates: 20L
+  tab:
+    linesHeader:
+      -
+      - '&aПривет!'
+      -
+    linesFooter:
+      -
+      - '&6Таблист изменен при помощи &eTableManager'
+      -
+    cooldownUpdates: 20L
