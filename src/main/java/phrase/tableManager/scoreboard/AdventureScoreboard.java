@@ -15,8 +15,8 @@ public class AdventureScoreboard {
 
     private static final String name = ChatColor.translateAlternateColorCodes('&', Plugin.getInstance().getConfig().getString("settings.scoreboard.title"));
     private static final DisplaySlot displaySlot = DisplaySlot.SIDEBAR;
-    private static List<Player> players = new ArrayList<>();
-    private static List<String> lines = new ArrayList<>();
+    public static final List<Player> players = new ArrayList<>();
+    public static List<String> lines = new ArrayList<>();
     private static Scoreboard scoreboard;
     private static Objective objective;
     private static int blankLineNum = 0;
@@ -121,10 +121,6 @@ public class AdventureScoreboard {
     public static void removePlayer(Player player) {
         player.setScoreboard(Plugin.getInstance().getServer().getScoreboardManager().getNewScoreboard());
         players.remove(player);
-    }
-
-    public static List<Player> getPlayers() {
-        return players;
     }
 
 }

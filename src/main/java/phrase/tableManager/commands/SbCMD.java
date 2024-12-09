@@ -21,7 +21,7 @@ public class SbCMD implements CommandExecutor {
 
         Player player = (Player) commandSender;
 
-        if(AdventureScoreboard.getPlayers().contains(player)) {
+        if(AdventureScoreboard.players.contains(player)) {
             AdventureScoreboard.removePlayer(player);
             ChatUtil.sendMessage(player, Plugin.getInstance().getConfig().getString("message.disable"));
             return true;
